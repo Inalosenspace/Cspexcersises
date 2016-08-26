@@ -10,13 +10,16 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Testing pull request");
             //
-            //
-            //
-            //
-            //
-            //
+            //Creating new instance and Showing it
+            Book book = new Book("harry potter", "J.K. Rowling");
+            Console.WriteLine(book.GetTitle());
+
+            book.SetTitle("New Title");
+            Console.WriteLine(book.GetTitle());
+
+
+            Console.ReadLine();
         }
     }
 }
