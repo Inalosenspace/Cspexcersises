@@ -10,6 +10,16 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            //
+            //Creating new instance and Showing it
+            Book book = new Book("harry potter", "J.K. Rowling");
+            Console.WriteLine(book.GetTitle());
+
+            book.SetTitle("New Title");
+            Console.WriteLine(book.GetTitle());
+
+
+            Console.ReadLine();
         }
     }
 }
