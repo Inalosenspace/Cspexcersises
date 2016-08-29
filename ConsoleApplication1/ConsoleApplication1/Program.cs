@@ -32,14 +32,26 @@ namespace ConsoleApplication1
 
             //==========================BALL=========================
             //Creating balls
-            Ball ball = new Ball(2,100);
-            Ball ball2 = new Ball(0,0);
+            Ball ball = new Ball(new Color(100,200,255),100,2);
+            Ball ball2 = new Ball(new Color(100,100,100),200,0);
 
-            ball.Pop();
-            Console.WriteLine("Current ball1 size, throws: {0}");
-            Console.WriteLine(ball.GetBallSize());
-            Console.WriteLine(ball.GetThrows());
+            //Throwing a ball2 for a couple times
+            Console.WriteLine("Throwing ball for a couple of times");
+            ball2.Throw();
+            ball2.Throw();
+            ball2.Throw();
 
+            //Checking values 
+            Console.WriteLine("Ball throws: {0}",ball.GetThrows());
+            Console.WriteLine("Ball2 throws: {0}",ball2.GetThrows());
+
+            //Pop a ball
+            Console.WriteLine("Trying to throw a popped ball");
+            ball2.Throw();
+
+            //Checking values 
+            Console.WriteLine("Ball throws: {0}", ball.GetThrows());
+            Console.WriteLine("Ball2 throws: {0}", ball2.GetThrows());
 
             Console.ReadLine();
         }

@@ -24,7 +24,7 @@ namespace ConsoleApplication1
             radius = 0;
         }
 
-        public void Throw(int throwABall)
+        public void Throw()
         {
             if (radius> 0)
             {
@@ -35,7 +35,7 @@ namespace ConsoleApplication1
 
 
         //Get throws, ball size
-        public int GetThrows(int throwsOfABall)
+        public int GetThrows()
         {
             return throwsOfABall;
         }
