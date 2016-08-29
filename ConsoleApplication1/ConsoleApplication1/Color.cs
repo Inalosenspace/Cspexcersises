@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
@@ -71,11 +67,11 @@ namespace ConsoleApplication1
         }
 
         //Getting grayscale value
-        public float GetGrayscaleValue(byte red, byte green, byte blue)
+        public byte GetGrayscaleValue(byte red, byte green, byte blue)
         {
-            float value = (red + green + blue) / 3;
-            return value;
+            return (byte)( (red + green + blue) / 3);
         }
 
+      
     }
 }
